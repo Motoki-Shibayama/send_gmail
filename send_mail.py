@@ -12,8 +12,7 @@ MY_PASSWORD = secret["PASSWORD"]
 TO_ADDRESS = secret["SEND_TO"]
 BCC = secret["BCC"]
 SUBJECT = secret["SUBJECT"]
-
-body_text = "ここちゃ可愛い天才"
+body_text = secret["BODY"]
 
 def create_message(from_addr, to_addr, bcc_addr, subject, body):
     msg = MIMEText(body)
